@@ -2,7 +2,7 @@ angular.module('ajb.ice-nav', [])
 
 .run(function ($templateCache) {
     $templateCache.put('ajb-iceNav.html', "\
-        <div id=\"navigation-container\">\
+        <div id=\"ice-nav-container\">\
             <div class=\"inner\">\
                 <ul class=\"group-list\">\
                     <li class=\"group\" ng-repeat=\"group in groups\">\
@@ -31,7 +31,11 @@ angular.module('ajb.ice-nav', [])
 .directive('iceNav', function () {
     return {
         restrict: 'E',
-        link: function ($scope, element, attrs) {},
+        link: function ($scope, element, attrs) {
+            $scope.getCellPadding = function (group) {
+                return group.subGroups.length != 0 ? 10 : 0
+            }
+        },
         scope: { groups: "="},
         templateUrl: "ajb-iceNav.html"
     }

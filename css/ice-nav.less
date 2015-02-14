@@ -1,10 +1,10 @@
-@navBackgroundColor: rgba(255,255,255, 0.7);
-@navFontColor: #494949;
-@navHighlightColor: rgba(183,209,16,0.7);
+@iceNavBackgroundColor: rgba(255,255,255, 0.7);
+@iceNavFontColor: #494949;
+@iceNavHighlightColor: rgba(183,209,16,0.7);
 
 .navFont {
     font-family: 'Raleway',Arial;
-    color: @navFontColor;
+    color: @iceNavFontColor;
     font-weight: 500;
     text-transform: uppercase;
     text-shadow: none !important;
@@ -12,10 +12,10 @@
 }
 
 .navBackground {
-    background: @navBackgroundColor;
+    background: @iceNavBackgroundColor;
 }
 
-#navigation-container {
+#ice-nav-container {
     height: 55px;
     .navBackground;
     .inner {
@@ -26,8 +26,6 @@
         margin-left: auto;
         display: table;
         height: 55px;
-        background: url(/images/techversed_logo.png) no-repeat 315px;
-        background-size: 200px;
         li.group {
             .navFont;
             position: relative;
@@ -42,16 +40,13 @@
             }
             &:hover {
                 .name {
-                    background: @navHighlightColor;
+                    background: @iceNavHighlightColor;
                     color: white;
                     cursor: pointer;
                 }
                 .group-children-container {
                     display: block;
                 }
-            }
-            &:nth-child(3) {
-                margin-right: 200px;
             }
         }
     }
@@ -63,6 +58,7 @@
         top: 47px;
         left: 5px;
         ul.child-list {
+            padding-top: 7px;
             display: inline-block;
             li.sub-group-name {
                 .navFont;
@@ -79,7 +75,7 @@
                 padding: 3px 0px;
                 width: 170px;
                 &:hover {
-                    background: @navHighlightColor;
+                    background: @iceNavHighlightColor;
                     color: white;
                     cursor: pointer;
                 }
