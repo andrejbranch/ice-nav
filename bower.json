@@ -1,0 +1,18 @@
+{
+    "authors": [
+        "Andre Branchizio", "Andre Branchizio <andrejbranch@gmail.com>"
+    ],
+    "dependencies": {
+        "angular": ">= 1.0.8"
+    },
+    "description": "angular js navigation bar",
+    "homepage": "https://github.com/andrejbranch/ice-nav",
+    "ignore": [],
+    "main": "./src/ice-nav.js",
+    "name": "ice-nav",
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/andrejbranch/ice-nav.git"
+    },
+    "version": "0.1.0"
+}
