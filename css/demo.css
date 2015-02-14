@@ -60,6 +60,14 @@
   padding-top: 7px;
   display: inline-block;
 }
+#ice-nav-container .group-children-container ul.child-list li a:link {
+  color: inherit;
+  text-decoration: inherit;
+}
+#ice-nav-container .group-children-container ul.child-list li a:visited {
+  text-decoration: inherit;
+  color: inherit;
+}
 #ice-nav-container .group-children-container ul.child-list li.sub-group-name {
   font-family: 'Raleway', Arial;
   color: #494949;

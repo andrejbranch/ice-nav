@@ -11,12 +11,16 @@ angular.module('ajb.ice-nav', [])
                             <tr>\
                                 <td ng-repeat=\"subGroup in group.subGroups\" ng-if=\"group.subGroups.length != 0\">\
                                     <ul class=\"child-list\"> <li class=\"sub-group-name\">{{subGroup.name}}<\/li>\
-                                        <li class=\"child\" ng-repeat=\"item in subGroup.items\">{{item.name}}<\/li>\
+                                        <li class=\"child\" ng-repeat=\"item in subGroup.items\">\
+                                            <a ng-click=\"onClick(item)\">{{item.name}}<\/a>\
+                                        <\/li>\
                                     <\/ul>\
                                 <\/td>\
                                 <td ng-if=\"group.items.length != 0\">\
                                     <ul class=\"child-list\">\
-                                        <li class=\"child\" ng-repeat=\"item in group.items\">{{item.name}}<\/li>\
+                                        <li class=\"child\" ng-repeat=\"item in group.items\">\
+                                            <a ng-click=\"onClick(item)\">{{item.name}}<\/a>\
+                                        <\/li>\
                                     <\/ul>\
                                 <\/td>\
                             <\/tr>\
@@ -32,8 +36,13 @@ angular.module('ajb.ice-nav', [])
     return {
         restrict: 'E',
         link: function ($scope, element, attrs) {
+
             $scope.getCellPadding = function (group) {
                 return group.subGroups.length != 0 ? 10 : 0
+            }
+
+            $scope.onClick = function (item) {
+                window.location = item.link
             }
         },
         scope: { groups: "="},
