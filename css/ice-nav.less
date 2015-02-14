@@ -1,0 +1,89 @@
+@navBackgroundColor: rgba(255,255,255, 0.7);
+@navFontColor: #494949;
+@navHighlightColor: rgba(183,209,16,0.7);
+
+.navFont {
+    font-family: 'Raleway',Arial;
+    color: @navFontColor;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-shadow: none !important;
+    font-size: 14px;
+}
+
+.navBackground {
+    background: @navBackgroundColor;
+}
+
+#navigation-container {
+    height: 55px;
+    .navBackground;
+    .inner {
+        background: transparent;
+    }
+    ul.group-list {
+        margin-right: auto;
+        margin-left: auto;
+        display: table;
+        height: 55px;
+        background: url(/images/techversed_logo.png) no-repeat 315px;
+        background-size: 200px;
+        li.group {
+            .navFont;
+            position: relative;
+            display: inline-block;
+            text-align: center;
+            line-height: 47px;
+            margin-top: 8px;
+            margin-right: 8px;
+            padding: 0 5px 0 5px;
+            .name {
+                padding: 11px 10px;
+            }
+            &:hover {
+                .name {
+                    background: @navHighlightColor;
+                    color: white;
+                    cursor: pointer;
+                }
+                .group-children-container {
+                    display: block;
+                }
+            }
+            &:nth-child(3) {
+                margin-right: 200px;
+            }
+        }
+    }
+    .group-children-container {
+        text-align: center;
+        .navBackground;
+        display: none;
+        position: absolute;
+        top: 47px;
+        left: 5px;
+        ul.child-list {
+            display: inline-block;
+            li.sub-group-name {
+                .navFont;
+                font-size: 11px;
+                font-weight: bold;
+                line-height: 20px;
+                padding: 3px 0px;
+                width: 170px;
+            }
+            li.child {
+                .navFont;
+                font-size: 11px;
+                line-height: 20px;
+                padding: 3px 0px;
+                width: 170px;
+                &:hover {
+                    background: @navHighlightColor;
+                    color: white;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

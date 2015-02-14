@@ -31,10 +31,8 @@ angular.module('ajb.ice-nav', [])
 .directive('iceNav', function () {
     return {
         restrict: 'E',
-        link: function ($scope, element, attrs) {
-            console.log(1)
-        },
-        scope: { tree: "="},
-        template: "ajb-iceNav.html"
+        link: function ($scope, element, attrs) {},
+        scope: { groups: "="},
+        templateUrl: "ajb-iceNav.html"
     }
 })
