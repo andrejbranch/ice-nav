@@ -25,8 +25,8 @@ Ice nav takes a strict json format for your groups and subgroups
       {
         "name":"Group 1",
         "items": [
-          {"name": "Item 1"},
-          {"name": "Item 2"}
+          {"name": "Item 1", "link": "/somelink"},
+          {"name": "Item 2", "link": "/somelink"}
         ],
         "subGroups": []
       },
@@ -34,12 +34,8 @@ Ice nav takes a strict json format for your groups and subgroups
         "name": "Group 2",
         "items": [],
         "subGroups": [
-          {
-            "name": "Sub Group 1 Item 1"
-          },
-          {
-            "name": "Sub Group 2 Item 2"
-          }
+          {"name": "Sub Group 1 Item 1", "link": "/somelink"},
+          {"name": "Sub Group 2 Item 2", "link": "/somelink"}
         ]
       }
     ]
