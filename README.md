@@ -1,5 +1,5 @@
 # ice-nav
-Angular JS navigation bar
+AngularJS navigation bar
 
 ![alt tag](https://raw.githubusercontent.com/andrejbranch/ice-nav/master/demo/screenshot_2.png)
 ![alt tag](https://raw.githubusercontent.com/andrejbranch/ice-nav/master/demo/screenshot_1.png)
