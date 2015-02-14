@@ -90,3 +90,12 @@
   color: white;
   cursor: pointer;
 }
+body {
+  margin: 0;
+  background: url(../demo/background.jpg);
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
