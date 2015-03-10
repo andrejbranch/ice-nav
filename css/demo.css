@@ -94,7 +94,7 @@
   cursor: pointer;
 }
 #ice-nav-container ul.group-list li.group:hover .group-children-container {
-  display: block;
+  display: table;
 }
 #ice-nav-container .group-children-container {
   text-align: center;
@@ -103,6 +103,10 @@
   position: absolute;
   top: 47px;
   left: 5px;
+  z-index: 1;
+}
+#ice-nav-container .group-children-container td {
+  vertical-align: top;
 }
 #ice-nav-container .group-children-container ul.child-list {
   padding-top: 7px;
