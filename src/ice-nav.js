@@ -11,15 +11,15 @@ angular.module('ajb.ice-nav', [])
                             <tr>\
                                 <td ng-repeat=\"subGroup in group.subGroups\" ng-if=\"group.subGroups.length != 0\">\
                                     <ul class=\"child-list\"> <li class=\"sub-group-name\">{{subGroup.name}}<\/li>\
-                                        <li class=\"child\" ng-repeat=\"item in subGroup.items\">\
-                                            <a ng-click=\"onClick(item)\">{{item.name}}<\/a>\
+                                        <li ng-click=\"onClick(item)\" class=\"child\" ng-repeat=\"item in subGroup.items\">\
+                                            <a>{{item.name}}<\/a>\
                                         <\/li>\
                                     <\/ul>\
                                 <\/td>\
                                 <td ng-if=\"group.items.length != 0\">\
                                     <ul class=\"child-list\">\
-                                        <li class=\"child\" ng-repeat=\"item in group.items\">\
-                                            <a ng-click=\"onClick(item)\">{{item.name}}<\/a>\
+                                        <li ng-click=\"onClick(item)\" class=\"child\" ng-repeat=\"item in group.items\">\
+                                            <a>{{item.name}}<\/a>\
                                         <\/li>\
                                     <\/ul>\
                                 <\/td>\
