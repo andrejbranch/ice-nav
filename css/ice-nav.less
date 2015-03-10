@@ -1,6 +1,7 @@
 @iceNavBackgroundColor: rgba(255,255,255, 0.7);
 @iceNavFontColor: #494949;
 @iceNavHighlightColor: rgba(183,209,16,0.7);
+@iceNavZIndex: 1;
 
 @keyframes fadein {
     from { opacity: 0; }
@@ -85,6 +86,10 @@
         position: absolute;
         top: 47px;
         left: 5px;
+        z-index: @iceNavZIndex;
+        td {
+            vertical-align: top;
+        }
         ul.child-list {
             padding-top: 7px;
             display: inline-block;
