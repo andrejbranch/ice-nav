@@ -1,9 +1,14 @@
 # ice-nav
 AngularJS navigation bar
 
+Light Theme
 ![alt tag](https://raw.githubusercontent.com/andrejbranch/ice-nav/master/demo/screenshot_2.png)
 ![alt tag](https://raw.githubusercontent.com/andrejbranch/ice-nav/master/demo/screenshot_1.png)
 ![alt tag](https://raw.githubusercontent.com/andrejbranch/ice-nav/master/demo/screenshot_3.png)
+
+Dark Theme
+![alt tag](https://raw.githubusercontent.com/andrejbranch/ice-nav/master/demo/screenshot_dark_1.png)
+![alt tag](https://raw.githubusercontent.com/andrejbranch/ice-nav/master/demo/screenshot_dark_2.png)
 
 Installation
 ------------
@@ -65,4 +70,9 @@ $scope.shouldHide = function(group) {
 
     return false
 }
+```
+
+Change to dark theme
+```html
+<ice-nav groups="groups" class="dark"></ice-nav>
 ```
