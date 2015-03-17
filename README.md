@@ -45,3 +45,24 @@ Now in your template you can use the ice nav bar like this
   ```html
     <ice-nav groups="groups"></ice-nav>
   ```
+
+Optional Fade In (defaults false)
+```html
+    <ice-nav groups="groups" fade="true"></ice-nav>
+```
+
+Show or hide groups or items with a isHidden funciton
+```js
+// in your html
+<ice-nav groups="groups" isHidden="shouldHide"></ice-nav>
+
+// in your controller
+$scope.shouldHide = function(group) {
+    // do some logic
+    if (group.name == "Admin" && loggedInUser.groups.indexOf('Admin') == -1) {
+        return true
+    }
+
+    return false
+}
+```
