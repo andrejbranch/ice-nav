@@ -44,7 +44,7 @@
 .navBackground {
   background: rgba(255, 255, 255, 0.7);
 }
-#ice-nav-container {
+#ice-nav-container.fade {
   -webkit-animation: fadein 2s;
   /* Safari, Chrome and Opera > 12.1 */
 
@@ -58,6 +58,8 @@
   /* Opera < 12.1 */
 
   animation: fadein 2s;
+}
+#ice-nav-container {
   height: 55px;
   background: rgba(255, 255, 255, 0.7);
 }
@@ -98,12 +100,14 @@
 }
 #ice-nav-container .group-children-container {
   text-align: center;
-  background: rgba(255, 255, 255, 0.7);
   display: none;
   position: absolute;
   top: 47px;
   left: 5px;
   z-index: 1;
+}
+#ice-nav-container .group-children-container tbody {
+  background: rgba(255, 255, 255, 0.7);
 }
 #ice-nav-container .group-children-container td {
   vertical-align: top;
