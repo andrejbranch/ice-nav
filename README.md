@@ -59,7 +59,7 @@ Show or hide groups or items with a isHidden funciton
 // in your controller
 $scope.shouldHide = function(group) {
     // do some logic
-    if (group.name == "Admin" && loggedInUser.groups.indexOf('Admin) == -1) {
+    if (group.name == "Admin" && loggedInUser.groups.indexOf('Admin') == -1) {
         return true
     }
 
