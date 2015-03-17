@@ -179,3 +179,13 @@ ice-nav #ice-nav-container .group-children-container tbody .child:hover {
   color: white;
   cursor: pointer;
 }
+body {
+  margin: 0;
+  background: url(../demo/background-light.jpg) no-repeat;
+  background-size: 100%;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}

@@ -1,3 +1,6 @@
+/* Variables */
+/* Light Theme */
+/* Dark Theme */
 @keyframes fadein {
   from {
     opacity: 0;
@@ -35,11 +38,11 @@
 }
 .navFont {
   font-family: 'Raleway', Arial;
-  color: #494949;
   font-weight: 500;
   text-transform: uppercase;
   text-shadow: none !important;
   font-size: 14px;
+  color: inherit;
 }
 .navBackground {
   background: rgba(255, 255, 255, 0.7);
@@ -59,9 +62,36 @@
 
   animation: fadein 2s;
 }
+ice-nav.dark #ice-nav-container {
+  background: rgba(11, 11, 11, 0.6);
+  color: #ffffff;
+}
+ice-nav.dark #ice-nav-container li.group:hover .name {
+  background: rgba(147, 206, 216, 0.7);
+}
+ice-nav.dark #ice-nav-container .group-children-container tbody {
+  color: #ffffff;
+  background: rgba(11, 11, 11, 0.6);
+}
+ice-nav.dark #ice-nav-container .group-children-container tbody .child:hover {
+  background: rgba(147, 206, 216, 0.7);
+}
+ice-nav #ice-nav-container {
+  background: rgba(255, 255, 255, 0.7);
+  color: #494949;
+}
+ice-nav #ice-nav-container li.group:hover .name {
+  background: rgba(183, 209, 16, 0.7);
+}
+ice-nav #ice-nav-container .group-children-container tbody {
+  color: #494949;
+  background: rgba(255, 255, 255, 0.7);
+}
+ice-nav #ice-nav-container .group-children-container tbody .child:hover {
+  background: rgba(183, 209, 16, 0.7);
+}
 #ice-nav-container {
   height: 55px;
-  background: rgba(255, 255, 255, 0.7);
 }
 #ice-nav-container .inner {
   background: transparent;
@@ -74,11 +104,11 @@
 }
 #ice-nav-container ul.group-list li.group {
   font-family: 'Raleway', Arial;
-  color: #494949;
   font-weight: 500;
   text-transform: uppercase;
   text-shadow: none !important;
   font-size: 14px;
+  color: inherit;
   position: relative;
   display: inline-block;
   text-align: center;
@@ -91,7 +121,6 @@
   padding: 11px 10px;
 }
 #ice-nav-container ul.group-list li.group:hover .name {
-  background: rgba(183, 209, 16, 0.7);
   color: white;
   cursor: pointer;
 }
@@ -105,9 +134,6 @@
   top: 47px;
   left: 5px;
   z-index: 1;
-}
-#ice-nav-container .group-children-container tbody {
-  background: rgba(255, 255, 255, 0.7);
 }
 #ice-nav-container .group-children-container td {
   vertical-align: top;
@@ -126,11 +152,11 @@
 }
 #ice-nav-container .group-children-container ul.child-list li.sub-group-name {
   font-family: 'Raleway', Arial;
-  color: #494949;
   font-weight: 500;
   text-transform: uppercase;
   text-shadow: none !important;
   font-size: 14px;
+  color: inherit;
   font-size: 11px;
   font-weight: bold;
   line-height: 20px;
@@ -139,24 +165,24 @@
 }
 #ice-nav-container .group-children-container ul.child-list li.child {
   font-family: 'Raleway', Arial;
-  color: #494949;
   font-weight: 500;
   text-transform: uppercase;
   text-shadow: none !important;
   font-size: 14px;
+  color: inherit;
   font-size: 11px;
   line-height: 20px;
   padding: 3px 0px;
   width: 170px;
 }
 #ice-nav-container .group-children-container ul.child-list li.child:hover {
-  background: rgba(183, 209, 16, 0.7);
   color: white;
   cursor: pointer;
 }
 body {
   margin: 0;
-  background: url(../demo/background.jpg);
+  background: url(../demo/background.jpg) no-repeat;
+  background-size: 100%;
 }
 ul {
   margin: 0;
